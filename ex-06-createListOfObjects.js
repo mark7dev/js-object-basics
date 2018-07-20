@@ -24,6 +24,21 @@
 // ++ YOUR CODE HERE
 
 
+function createListOfObjects(list) {
+  var namesList = [];
+
+  for(var i = 0; i < list.length; i++) {
+    var separatedNames = list[i].split(" ");
+    var object = {
+      firstName: separatedNames[0],
+      lastName: separatedNames[1]
+    }
+    
+    namesList.push(object);
+  }
+
+     return namesList;
+}
 
 
 
